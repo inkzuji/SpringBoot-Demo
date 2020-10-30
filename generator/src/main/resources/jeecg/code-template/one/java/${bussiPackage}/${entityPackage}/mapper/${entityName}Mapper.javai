@@ -1,0 +1,26 @@
+package ${bussiPackage}.${entityPackage}.mapper;
+
+import java.util.List;
+
+import org.apache.ibatis.annotations.Param;
+import ${bussiPackage}.${entityPackage}.entity.${entityName};
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+
+public interface ${entityName}Mapper extends BaseMapper<${entityName}> {
+
+    /**
+     * 新增数据
+     *
+     * @param record 参数对象
+     * @return 返回结果
+     */
+    int insertSelective(${entityName} record);
+
+    /**
+     * 修改数据
+     *
+     * @param record 参数对象
+     * @return 返回结果
+     */
+    int updateByPrimaryKeySelective(${entityName} record);
+}
